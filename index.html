@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nkamwah Limen Law Firm | Perfection</title>
+<link rel="icon" type="image/jpg" href="images/logo.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,900&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .hero-vibe {
+            position: absolute; inset: 0;
+            background: radial-gradient(at 0% 0%, rgba(30, 58, 138, 0.1) 0, transparent 40%), 
+                        radial-gradient(at 100% 100%, rgba(20, 83, 45, 0.08) 0, transparent 40%), #f9fafb;
+            z-index: -1;
+        }
+        .hero-vibe::before {
+            content: ""; position: absolute; inset: 0;
+            background-image: radial-gradient(#cbd5e1 0.8px, transparent 0.8px);
+            background-size: 40px 40px; opacity: 0.2;
+        }
+        .aura {
+            position: absolute; width: 80vw; height: 80vh;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, transparent 70%);
+            border-radius: 50%; filter: blur(100px);
+            animation: moveAura 25s infinite alternate ease-in-out; z-index: -1;
+        }
+        @keyframes moveAura { 0% { transform: translate(-20%, -20%); } 100% { transform: translate(30%, 30%); } }
+        .media-frame { border: 12px solid #ffffff; box-shadow: 0 40px 80px -15px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="antialiased">
+
+
+<section class="min-h-screen flex flex-col relative overflow-hidden">
+        <div class="hero-vibe"></div>
+        <div class="aura"></div>
+
+        <header class="relative z-50 p-10 flex justify-between items-center max-w-7xl mx-auto w-full">
+            <div class="flex items-center space-x-5">
+                <div class="p-2 bg-white shadow-sm rounded-xl"><img src="images/logo.jpg" alt="Logo" class="h-14"></div>
+                <div class="leading-none">
+                    <h1 class="text-2xl font-black tracking-tighter text-slate-900 uppercase">NKAMWAH LIMEN</h1>
+                    <p class="text-[10px] tracking-[0.5em] font-bold text-blue-900 uppercase opacity-60">Law Firm</p>
+                </div>
+            </div>
+            <nav class="hidden lg:flex items-center space-x-12">
+                <ul class="flex space-x-10 text-[11px] font-black uppercase tracking-[0.2em] text-slate-400">
+                    <li class="text-blue-900 border-b-2 border-blue-900 pb-1 cursor-default">Home</li>
+                    <li class="hover:text-blue-900 transition cursor-pointer">The Founder</li>
+                    <li class="hover:text-blue-900 transition cursor-pointer">Media</li>
+                    <li class="hover:text-blue-900 transition cursor-pointer">Services</li>
+                </ul>
+                <button class="bg-slate-900 text-white px-10 py-4 rounded-full text-[11px] font-black uppercase tracking-widest hover:bg-blue-900 transition-all shadow-2xl">Consultation</button>
+            </nav>
+        </header>
+
+        <div class="relative z-10 flex-1 grid lg:grid-cols-[1fr_2.3fr] gap-10 items-center px-10 lg:px-24 max-w-[1500px] mx-auto w-full py-10">
+            
+            <div class="space-y-10">
+                <div class="inline-flex items-center space-x-3 bg-white/90 backdrop-blur px-6 py-2 rounded-full border border-slate-100 shadow-sm">
+                    <span class="flex h-2 w-2 relative">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
+                    </span>
+                    <span class="text-[10px] font-black uppercase tracking-[0.3em] text-blue-800">Source of Authority in Society</span>
+                </div>
+                
+                <div class="min-h-[250px]">
+                    <h2 id="hero-title" class="text-5xl lg:text-6xl font-serif font-black leading-[1.1] text-slate-950 transition-all duration-700">A Trusted Voice.</h2>
+                    <p id="hero-subtext" class="text-base text-slate-500 mt-8 leading-relaxed max-w-sm italic border-l-4 border-blue-900/10 pl-8">Defining the legal landscape through expert commentary and social authority.</p>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <div id="dot-0" class="w-16 h-1.5 bg-blue-900 transition-all duration-700 rounded-full"></div>
+                    <div id="dot-1" class="w-10 h-1.5 bg-slate-200 transition-all duration-700 rounded-full"></div>
+                    <div id="dot-2" class="w-10 h-1.5 bg-slate-200 transition-all duration-700 rounded-full"></div>
+                </div>
+            </div>
+
+            <div class="relative w-full lg:scale-105">
+                <div class="media-frame rounded-[80px] overflow-hidden aspect-video bg-white relative shadow-[0_60px_120px_-20px_rgba(0,0,0,0.25)]">
+                    <div id="media-0" class="absolute inset-0 transition-all duration-1000 opacity-100 scale-100">
+                        <video id="hero-video" class="w-full h-full object-cover" autoplay muted loop playsinline>
+                            <source src="images/dash-interview.mp4" type="video/mp4">
+                        </video>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
+                    </div>
+                    <div id="media-1" class="absolute inset-0 transition-all duration-1000 opacity-0 scale-105"><img src="images/founderwithbookfullpicture.jpg" class="w-full h-full object-cover"></div>
+                    <div id="media-2" class="absolute inset-0 transition-all duration-1000 opacity-0 scale-105"><img src="images/founderandteam.jpg" class="w-full h-full object-cover"></div>
+                </div>
+
+                <div class="absolute -bottom-6 right-20 bg-white p-6 shadow-2xl rounded-3xl border border-slate-50 hidden lg:block z-20">
+                    <p id="badge-label" class="text-[9px] font-black uppercase tracking-[0.3em] text-blue-900">Expert Commentary</p>
+                    <p id="badge-detail" class="text-xs text-slate-400 italic">"As seen on Dash Media TV"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const video = document.getElementById('hero-video');
+        
+        // Target: 3m 50s (230 seconds)
+        const startTime = 230;
+
+        video.addEventListener('loadedmetadata', function() {
+            this.currentTime = startTime;
+        }, false);
+
+        // Fallback for fast loading browsers
+        if (video.readyState >= 1) {
+            video.currentTime = startTime;
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+<section id="services" class="py-32 bg-slate-950 text-white relative overflow-hidden">
+        
+        <div class="absolute inset-0 z-0 pointer-events-none opacity-[0.03]">
+            <div class="absolute inset-0" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 30px 30px;"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-10 lg:px-24 relative z-10">
+            <div class="mb-20">
+                <p class="text-blue-900 font-bold uppercase tracking-widest text-xs mb-4">Core Competencies</p>
+                <h2 class="text-6xl font-serif font-black text-white leading-[1.1]">
+                    Where legal mastery<br>shapes justice.
+                </h2>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-20">
+                
+                <div class="lg:w-1/2 relative">
+                    <div class="absolute left-[7px] top-4 bottom-4 w-[2px] bg-white/20"></div>
+                    
+                    <div class="space-y-8 relative">
+                        <div onmouseover="switchService(0)" class="service-item group cursor-pointer pl-10 relative">
+                            <div class="dot absolute left-0 top-2.5 w-4 h-4 rounded-full border-2 border-white/20 bg-slate-950 group-hover:border-blue-900 group-hover:bg-blue-900 transition-all z-10"></div>
+                            <h3 class="text-xl font-serif font-bold text-slate-500 group-hover:text-blue-900 transition-colors leading-tight">Criminal Law</h3>
+                        </div>
+
+                        <div onmouseover="switchService(1)" class="service-item group cursor-pointer pl-10 relative">
+                            <div class="dot absolute left-0 top-2.5 w-4 h-4 rounded-full border-2 border-white/20 bg-slate-950 group-hover:border-blue-900 group-hover:bg-blue-900 transition-all z-10"></div>
+                            <h3 class="text-xl font-serif font-bold text-slate-500 group-hover:text-blue-900 transition-colors leading-tight">Family Law</h3>
+                        </div>
+
+                        <div onmouseover="switchService(2)" class="service-item group cursor-pointer pl-10 relative">
+                            <div class="dot absolute left-0 top-2.5 w-4 h-4 rounded-full border-2 border-white/20 bg-slate-950 group-hover:border-blue-900 group-hover:bg-blue-900 transition-all z-10"></div>
+                            <h3 class="text-xl font-serif font-bold text-slate-500 group-hover:text-blue-900 transition-colors leading-tight">Debt Recovery</h3>
+                        </div>
+
+                        <div onmouseover="switchService(3)" class="service-item group cursor-pointer pl-10 relative">
+                            <div class="dot absolute left-0 top-2.5 w-4 h-4 rounded-full border-2 border-white/20 bg-slate-950 group-hover:border-blue-900 group-hover:bg-blue-900 transition-all z-10"></div>
+                            <h3 class="text-xl font-serif font-bold text-slate-500 group-hover:text-blue-900 transition-colors leading-tight">Land Law</h3>
+                        </div>
+
+                        <div onmouseover="switchService(4)" class="service-item group cursor-pointer pl-10 relative">
+                            <div class="dot absolute left-0 top-2.5 w-4 h-4 rounded-full border-2 border-white/20 bg-slate-950 group-hover:border-blue-900 group-hover:bg-blue-900 transition-all z-10"></div>
+                            <h3 class="text-xl font-serif font-bold text-slate-500 group-hover:text-blue-900 transition-colors leading-tight">Company Law</h3>
+                        </div>
+
+                        <div onmouseover="switchService(5)" class="service-item group cursor-pointer pl-10 relative">
+                            <div class="dot absolute left-0 top-2.5 w-4 h-4 rounded-full border-2 border-white/20 bg-slate-950 group-hover:border-blue-900 group-hover:bg-blue-900 transition-all z-10"></div>
+                            <h3 class="text-xl font-serif font-bold text-slate-500 group-hover:text-blue-900 transition-colors leading-tight">Cyber Criminality</h3>
+                        </div>
+
+                        <div onmouseover="switchService(6)" class="service-item group cursor-pointer pl-10 relative">
+                            <div class="dot absolute left-0 top-2.5 w-4 h-4 rounded-full border-2 border-white/20 bg-slate-950 group-hover:border-blue-900 group-hover:bg-blue-900 transition-all z-10"></div>
+                            <h3 class="text-xl font-serif font-bold text-slate-500 group-hover:text-blue-900 transition-colors leading-tight">Labour Law</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 relative min-h-[550px]">
+                    <div id="service-card" class="bg-white rounded-[40px] shadow-[0_40px_80px_-15px_rgba(0,0,0,0.5)] overflow-hidden h-full flex flex-col transition-all duration-700 transform translate-y-0 opacity-100">
+                        <div class="h-1/2 overflow-hidden relative">
+                            <img id="card-img" src="images/CRIMINALLAW.jpg" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/30 to-transparent"></div>
+                        </div>
+                        <div class="p-10 lg:p-14 flex-1 flex flex-col justify-center">
+                            <h3 id="card-title" class="text-3xl font-serif font-bold text-slate-950 mb-4 italic leading-tight">Criminal Law</h3>
+                            <p id="card-desc" class="text-slate-600 leading-relaxed text-sm max-w-sm">
+                                Robust defense strategies focused on the protection of fundamental rights and the presumption of innocence in the Cameroonian legal landscape.
+                            </p>
+                            <div class="mt-8">
+                                <button class="border border-slate-200 px-8 py-3 rounded-full text-[10px] font-black uppercase tracking-widest text-slate-950 hover:bg-slate-950 hover:text-white transition-all">Request Consultation</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const serviceData = [
+            { 
+                t: "Criminal Law", 
+                d: "Robust defense strategies focused on the protection of fundamental rights and the presumption of innocence in the Cameroonian legal landscape.",
+                i: "images/CRIMINALLAW.jpg"
+            },
+            { 
+                t: "Family Law", 
+                d: "Sensitive counsel for matrimonial causes, successions, and child custody. We prioritize discretion and the long-term stability of the family unit.",
+                i: "images/FAMILYLAW.jpg"
+            },
+            { 
+                t: "Debt Recovery", 
+                d: "Aggressive and strategic recovery of financial assets through both judicial enforcement and mediation, ensuring your interests are protected.",
+                i: "images/DEBTRECOVERY.jpg"
+            },
+            { 
+                t: "Land Law", 
+                d: "Navigating Cameroon's complex land tenure system, providing expert advisory on real estate transactions, registration, and litigation.",
+                i: "images/LANDLAW.jpg"
+            },
+            { 
+                t: "Company Law", 
+                d: "Definitive corporate advisory, guiding entities through the OHADA legal framework, governance, regulatory compliance, and complex restructuring.",
+                i: "images/COMPANYLAW.jpg"
+            },
+            { 
+                t: "Cyber Criminality", 
+                d: "Expert defense in the shifting landscape of digital crime, data privacy violations, and electronic fraud within the Central African region.",
+                i: "images/CYBERCRIMINALITY.jpg"
+            },
+            { 
+                t: "Labour Law", 
+                d: "Masterful navigation of the Cameroon Labour Code, resolving complex employment disputes, contracts, and negotiation on behalf of entities and individuals.",
+                i: "images/LABOURLAW.jpg" 
+            }
+        ];
+
+        function switchService(index) {
+            const card = document.getElementById('service-card');
+            const items = document.querySelectorAll('.service-item');
+            
+            // Animation Trigger
+            card.style.opacity = "0";
+            card.style.transform = "translateY(30px)";
+
+            setTimeout(() => {
+                const data = serviceData[index];
+                document.getElementById('card-title').innerText = data.t;
+                document.getElementById('card-desc').innerText = data.d;
+                document.getElementById('card-img').src = data.i;
+
+                // Update Timeline Styles
+                items.forEach((item, i) => {
+                    const dot = item.querySelector('.dot');
+                    const text = item.querySelector('h3');
+                    if(i === index) {
+                        dot.style.backgroundColor = "#1e3a8a"; // The main brand blue
+                        dot.style.borderColor = "#1e3a8a";
+                        text.style.color = "#1e3a8a";
+                    } else {
+                        dot.style.backgroundColor = "#020617"; // Back to background color
+                        dot.style.borderColor = "#ffffff20"; // White/20
+                        text.style.color = "#94a3b8"; // Slate 400
+                    }
+                });
+
+                // Final Fade In
+                card.style.opacity = "1";
+                card.style.transform = "translateY(0)";
+            }, 350);
+        }
+        
+        // Initialize with the first one
+        switchService(0);
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="book" class="py-32 bg-slate-50 relative overflow-hidden">
+        
+        <div class="absolute inset-0 z-0 pointer-events-none opacity-[0.03]">
+            <div class="absolute inset-0" style="background-image: radial-gradient(#0A192F 1px, transparent 1px); background-size: 30px 30px;"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-10 relative z-10">
+            <div class="grid lg:grid-cols-7 gap-10 items-center">
+                
+                <div class="lg:col-span-2 group">
+                    <div class="relative">
+                        <div class="rounded-3xl overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] bg-white border-[12px] border-white transition-transform duration-500 group-hover:-translate-y-4">
+                            <img src="images/founderwithbookfullpicture.jpg" alt="Dr. Nkamwah with Book" class="w-full object-cover aspect-[4/5]">
+                        </div>
+                        <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-white px-6 py-3 rounded-full shadow-lg border border-slate-100 hidden lg:block">
+                            <p class="text-[10px] font-black uppercase tracking-widest text-slate-900 leading-none">The Scholar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-3 text-center px-10">
+                    <h4 class="text-blue-900 font-black uppercase tracking-[0.4em] text-[10px] mb-6">Published Authority</h4>
+                    <h2 class="text-4xl lg:text-5xl font-serif font-black text-slate-950 leading-tight mb-8">
+                        The Masterpiece.
+                    </h2>
+                    
+                    <p class="text-slate-500 mb-10 leading-relaxed font-medium">
+                        Navigating the complexities of Cameroon’s unique bijural system, Dr. Nkamwah Limen provides the definitive analysis of the right to provisional liberty.
+                    </p>
+
+                    <div class="space-y-4">
+                        <a href="https://www.amazon.com/Bail-Common-Civil-Jurisdictions-Cameroon/dp/6207471210" target="_blank" class="block bg-blue-900 text-white w-full py-5 rounded-full text-[11px] font-black uppercase tracking-widest hover:bg-slate-800 transition shadow-2xl text-center">
+                            Order on Amazon
+                        </a>
+                        <p class="text-[10px] text-slate-400 font-medium leading-relaxed">
+                            Copies are also available via direct order. Please consult with our firm for professional requests or distribution within Cameroon.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 group">
+                    <div class="relative">
+                        <div class="rounded-3xl overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] bg-white border-[12px] border-white transition-transform duration-500 group-hover:-translate-y-4">
+                            <img src="images/bookonamazon.png" alt="Amazon Book Listing" class="w-full object-cover aspect-[4/5]">
+                        </div>
+                        <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-blue-900 px-6 py-3 rounded-full shadow-lg border border-blue-800 hidden lg:block">
+                            <p class="text-[10px] font-black uppercase tracking-widest text-white leading-none">THE WORK</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="founder" class="py-20 bg-slate-950 text-white relative overflow-hidden">
+        
+        <div class="absolute top-[15%] left-1/2 -translate-x-1/2 w-full text-center pointer-events-none select-none z-10 opacity-10">
+            <h2 class="text-[15vw] font-serif font-black uppercase leading-none text-white">THE<br>ARCHITECT</h2>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-8 relative flex flex-col md:flex-row items-center justify-center">
+            
+            <div class="md:w-1/3 space-y-12 z-30 mb-16 md:mb-0 relative pr-10 text-right">
+                <div class="relative pr-10 border-r border-blue-900">
+                    <span class="text-xs font-black uppercase tracking-[0.3em] text-blue-900 block mb-2">Leadership</span>
+                    <h3 class="text-3xl font-serif font-bold italic mb-3 leading-tight text-white">The Douala <br>Anglophone Bar.</h3>
+                    <p class="text-xs text-slate-400 max-w-sm leading-relaxed">Leading legal innovation and standardizing bilingual practice across Littoral, Cameroon.</p>
+                </div>
+                
+                <div class="relative pr-10 border-r border-blue-900">
+                    <span class="text-xs font-black uppercase tracking-[0.3em] text-blue-900 block mb-2">Scholarly Authority</span>
+                    <h3 class="text-3xl font-serif font-bold italic mb-3 leading-tight text-white">"Bail in the <br>Common Law"</h3>
+                    <p class="text-xs text-slate-400 max-w-sm leading-relaxed">The definitive treatise on Cameroon's complex bijural bail system.</p>
+                </div>
+            </div>
+
+            <div class="md:w-1/3 flex justify-center z-20 relative">
+                <div class="overflow-hidden" style="-webkit-mask-image: radial-gradient(circle, black 60%, transparent 80%); mask-image: radial-gradient(circle, black 60%, transparent 80%);">
+                    <img src="images/Magazinestylecoverpicture.jpg" alt="Dr. Bar. Nkamwah Limen" class="max-h-[85vh] w-auto drop-shadow-[0_35px_35px_rgba(0,0,0,0.6)] object-cover">
+                </div>
+            </div>
+
+            <div class="md:w-1/3 space-y-12 z-30 mt-16 md:mt-0 relative pl-10">
+                <div class="relative pl-10 border-l border-blue-900">
+                    <span class="text-xs font-black uppercase tracking-[0.3em] text-blue-900 block mb-2">Legacy</span>
+                    <h3 class="text-3xl font-serif font-bold italic mb-3 leading-tight text-white">A Record of <br>Inclusion.</h3>
+                    <p class="text-xs text-slate-400 max-w-sm leading-relaxed">Setting a new benchmark with 75% female representation for the 2024 Bar exam candidates.</p>
+                </div>
+
+                <div class="relative pl-10 border-l border-blue-900">
+                    <span class="text-xs font-black uppercase tracking-[0.3em] text-blue-900 block mb-2">Public Influence</span>
+                    <h3 class="text-3xl font-serif font-bold italic mb-3 leading-tight text-white">"The Legal <br>Commentator"</h3>
+                    <p class="text-xs text-slate-400 max-w-sm leading-relaxed">A trusted source of legal expertise in Cameroonian public discourse.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 text-center pointer-events-none group w-full px-8">
+            <h5 class="text-2xl md:text-3xl font-serif font-bold italic text-white leading-tight max-w-3xl mx-auto">"The Most Impactful Legal Voice in Cameroon Public Discourse"</h5>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+<section id="team" class="py-32 bg-slate-50 relative overflow-hidden">
+        
+        <div class="absolute top-20 right-[-10%] opacity-[0.03] pointer-events-none select-none z-0">
+            <h2 class="text-[25vw] font-serif font-black tracking-tighter">TEAM</h2>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-10 lg:px-24 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+                
+                <div class="w-full lg:w-1/2 group relative">
+                    <div class="rounded-[40px] overflow-hidden shadow-[0_60px_100px_-20px_rgba(0,0,0,0.15)] bg-white border-[16px] border-white transition-all duration-1000 group-hover:scale-[1.02]">
+                        <img src="images/team.jpg" alt="Nkamwah Limen Legal Team" class="w-full h-full object-cover aspect-[4/5] grayscale hover:grayscale-0 transition-all duration-1000">
+                    </div>
+                    
+                    <div class="absolute -bottom-10 -right-6 bg-blue-900 text-white p-8 rounded-3xl shadow-2xl transform rotate-3 hover:rotate-0 transition-all duration-500 hidden md:block">
+                        <p class="text-4xl font-serif font-bold mb-1">75%</p>
+                        <p class="text-[9px] font-black uppercase tracking-[0.2em] leading-tight">Female Leadership<br>within the Firm</p>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2 space-y-12">
+                    <div class="space-y-8">
+                        <p class="text-xl text-slate-600 leading-relaxed font-medium border-l-4 border-blue-900/20 pl-8">
+                            Our collective strength is anchored in a young, dynamic, and bilingual assembly of legal minds. We have intentionally moved away from the static traditions of the past to embrace a model of legal practice that combines traditional rigor with modern strategic agility. 
+                        </p>
+                        
+                        <p class="text-lg text-slate-500 leading-relaxed pl-8">
+                            Operating at the intersection of Cameroon's unique bijural framework, our associates are trained to navigate the complexities of both Common Law and Civil Law with equal precision. By prioritizing inclusive excellence—evidenced by our landmark 75% female representation—we ensure that our counsel is as diverse as the society we serve and as robust as the legal challenges of the 21st century.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-12 pt-6 pl-8">
+                        <div class="flex items-center space-x-4 border-b border-slate-200 pb-4">
+                            <span class="w-2 h-2 rounded-full bg-blue-900"></span>
+                            <p class="text-[11px] font-black uppercase tracking-widest text-slate-800">Bilingual Practice Mastery</p>
+                        </div>
+                        <div class="flex items-center space-x-4 border-b border-slate-200 pb-4">
+                            <span class="w-2 h-2 rounded-full bg-blue-900"></span>
+                            <p class="text-[11px] font-black uppercase tracking-widest text-slate-800">Ohada Legal Framework</p>
+                        </div>
+                        <div class="flex items-center space-x-4 border-b border-slate-200 pb-4">
+                            <span class="w-2 h-2 rounded-full bg-blue-900"></span>
+                            <p class="text-[11px] font-black uppercase tracking-widest text-slate-800">Strategic Litigation</p>
+                        </div>
+                        <div class="flex items-center space-x-4 border-b border-slate-200 pb-4">
+                            <span class="w-2 h-2 rounded-full bg-blue-900"></span>
+                            <p class="text-[11px] font-black uppercase tracking-widest text-slate-800">Scholarly Excellence</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+<section id="contact" class="py-32 bg-slate-950 text-white relative overflow-hidden">
+        
+        <div class="absolute inset-0 z-0 pointer-events-none opacity-[0.03]">
+            <div class="absolute inset-0" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 30px 30px;"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-10 lg:px-24 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                
+                <div>
+                    <h4 class="text-blue-900 font-black uppercase tracking-[0.4em] text-[10px] mb-6">Immediate Consultation</h4>
+                    <h2 class="text-6xl lg:text-7xl font-serif font-black text-white leading-[1.05] mb-12">
+                        The Architect of <br><span class="italic text-blue-900">Your Defense.</span>
+                    </h2>
+
+                    <div class="space-y-4">
+                        <a href="https://wa.me/237676333393" class="flex items-center justify-between p-7 rounded-[32px] border border-white/10 hover:border-blue-900 transition-all group bg-white/5 backdrop-blur-sm">
+                            <div class="flex items-center space-x-6">
+                                <div class="text-2xl font-serif italic text-blue-900">W.</div>
+                                <div>
+                                    <p class="text-[9px] font-black uppercase tracking-widest text-slate-500 mb-1">WhatsApp Direct</p>
+                                    <p class="text-xl font-bold text-white tracking-tight">+237 676 33 33 93</p>
+                                </div>
+                            </div>
+                            <span class="text-slate-600 group-hover:text-blue-900 transition-all text-2xl pr-4">→</span>
+                        </a>
+
+                        <a href="https://www.linkedin.com/company/nkamwah-limen-law-firm?originalSubdomain=cm" target="_blank" class="flex items-center justify-between p-7 rounded-[32px] border border-white/10 hover:border-blue-900 transition-all group bg-white/5 backdrop-blur-sm">
+                            <div class="flex items-center space-x-6">
+                                <div class="text-2xl font-serif italic text-blue-900">L.</div>
+                                <div>
+                                    <p class="text-[9px] font-black uppercase tracking-widest text-slate-500 mb-1">Professional Network</p>
+                                    <p class="text-xl font-bold text-white tracking-tight">LinkedIn Profile</p>
+                                </div>
+                            </div>
+                            <span class="text-slate-600 group-hover:text-blue-900 transition-all text-2xl pr-4">→</span>
+                        </a>
+
+                        <a href="mailto:office@nkamwahlimen.com" class="flex items-center justify-between p-7 rounded-[32px] border border-white/10 hover:border-blue-900 transition-all group bg-white/5 backdrop-blur-sm">
+                            <div class="flex items-center space-x-6">
+                                <div class="text-2xl font-serif italic text-blue-900">E.</div>
+                                <div>
+                                    <p class="text-[9px] font-black uppercase tracking-widest text-slate-500 mb-1">Official Email</p>
+                                    <p class="text-xl font-bold text-white tracking-tight">office@nkamwahlimen.com</p>
+                                </div>
+                            </div>
+                            <span class="text-slate-600 group-hover:text-blue-900 transition-all text-2xl pr-4">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="rounded-[60px] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] border border-white/10 bg-[#0a101f] relative aspect-square flex flex-col justify-center items-center text-center p-12">
+                        
+                        <div class="absolute inset-0 opacity-[0.1] pointer-events-none" style="background-image: linear-gradient(#1e3a8a 1px, transparent 1px), linear-gradient(90deg, #1e3a8a 1px, transparent 1px); background-size: 40px 40px;"></div>
+                        
+                        <div class="relative z-10">
+                            <div class="relative flex justify-center mb-10">
+                                <div class="absolute h-16 w-16 bg-blue-900/30 rounded-full animate-ping"></div>
+                                <div class="relative h-16 w-16 bg-blue-900 rounded-full flex items-center justify-center shadow-2xl border border-white/20">
+                                    <span class="text-2xl">📍</span>
+                                </div>
+                            </div>
+
+                            <h3 class="text-3xl font-serif font-bold text-white mb-4 italic">Akwa, Douala</h3>
+                            <p class="text-sm text-slate-400 leading-relaxed max-w-xs mx-auto mb-10">
+                                 Yvesmar Building-Opposite Gasprome company,<br>Littoral Region, Cameroon.
+                            </p>
+                            
+                            <div class="inline-flex items-center space-x-3 px-6 py-3 bg-white/5 rounded-full border border-white/10">
+                                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse shadow-[0_0_10px_#22c55e]"></span>
+                                <p class="text-[10px] font-black uppercase tracking-[0.3em] text-white">Firm Status: Accepting Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-slate-950 border-t border-white/5 relative z-10">
+        <div class="max-w-7xl mx-auto px-10 flex flex-col md:flex-row justify-between items-center">
+            <div class="space-y-2">
+                <h1 class="text-xl font-black tracking-tighter uppercase text-white">NKAMWAH LIMEN</h1>
+                <p class="text-[9px] tracking-[0.4em] font-bold text-blue-900 uppercase">Law Firm & Research Associate</p>
+            </div>
+            <p class="mt-8 md:mt-0 text-[9px] font-black uppercase tracking-[0.3em] text-slate-600">
+                © 2026 Cameroon Bar Association • Bonapriso • Douala
+            </p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script>
+        const slides = [
+            { t: "A Trusted <span class='italic text-blue-900'>Voice</span> in Public Discourse.", s: "Defining the legal landscape through expert commentary and social authority.", l: "Expert Commentary", d: '"As seen on Dash Media TV"' },
+            { t: "The <span class='italic text-blue-900'>Vanguard</span> of Thought Leadership.", s: "Scholarly excellence meeting practical mastery in Cameroon's bijural system.", l: "Published Scholarship", d: '"Bail in the Common Law"' },
+            { t: "A Legacy of <span class='italic text-blue-900'>Collective</span> Excellence.", s: "A young, dynamic, and inclusive team dedicated to bilingual legal precision.", l: "A Legacy of Inclusion", d: "Setting the Bar for Excellence" }
+        ];
+
+        let i = 0;
+        function next() {
+            i = (i + 1) % 3;
+            const title = document.getElementById('hero-title');
+            const label = document.getElementById('badge-label');
+            const detail = document.getElementById('badge-detail');
+            
+            title.style.opacity = 0;
+            setTimeout(() => {
+                title.innerHTML = slides[i].t;
+                document.getElementById('hero-subtext').innerText = slides[i].s;
+                label.innerText = slides[i].l;
+                detail.innerText = slides[i].d;
+                
+                title.style.opacity = 1;
+
+                for(let j=0; j<3; j++) {
+                    const media = document.getElementById(`media-${j}`);
+                    const dot = document.getElementById(`dot-${j}`);
+                    media.style.opacity = (j === i) ? "1" : "0";
+                    media.style.transform = (j === i) ? "scale(1)" : "scale(1.05)";
+                    dot.style.backgroundColor = (j === i) ? "#1e3a8a" : "#e2e8f0";
+                    dot.style.width = (j === i) ? "64px" : "40px";
+                }
+            }, 600);
+        }
+        setInterval(next, 7000);
+    </script>
+</body>
+</html>
